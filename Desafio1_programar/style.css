@@ -1,0 +1,169 @@
+@charset "utf-g";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --color-black_1: rgb(43,43,43);
+    --color-black_2: rgb(0,0,0);
+    --color-green: rgb(80,227, 194);
+    ---color-white: rgb(255, 255, 255);
+    --color-gray: rgb (235, 235, 235);
+}
+
+
+*{
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+ list-style: none;
+}
+
+a{
+ color: inherit;
+ text-decoration: none;
+}
+
+body{
+ box-sizing: border-box;
+ font-family: 'Roboto', sans-serif;
+ font-style: normal;
+}
+
+
+.background-headline{
+ position: relative;
+ height: 250vh;
+ background-image: url(meeting.webp);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ z-index: 1;
+}
+
+.background-headline::after{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgb(0,0,0,0.4);
+ z-index: -1;
+}
+
+
+header{
+ padding: 50px;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ width: 100%;
+}
+
+
+.content-header{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.content-header a {
+ color: var(---color-white);
+ text-decoration: none;
+}
+
+
+.content-header menu nav ul li a{
+ color: var(--color-green);
+}
+
+
+div h1{
+ font-family: 'Playfair Display', sans-serif;
+ line-height: 1.1em;
+ text-align: center;
+ font-size: 110px;
+ position: absolute;
+ padding-top: 250px;
+ letter-spacing: 0.01em;
+ color: var(---color-white);
+ width: 900px;
+ height: 800;
+ margin-left: 50px;
+}
+
+
+section#services{
+ background-color: var(--color-gray);
+ padding: 100px 0px 100px 0px;
+}
+
+section#services h2{
+ font-family: 'Playfair Display', sans-serif;
+ text-align: center;
+ font-size: 45px;
+ position: relative;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+
+section#services article{
+ text-align: center;
+ height: 600px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 50px;
+ margin: 100px 0px 100px 0px;
+}
+
+
+section#services .consultancy{
+ position: relative;
+ background-image: url();
+ width: 350px;
+ height: 596px;
+ z-index: 1;
+}
+
+
+section#services  .consultancy::after{
+ content: '';
+ position: absolute;
+}
+
+
+section#services .consultancy::after{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 350px;
+ height: 596px;
+ background-color: rgb(0,0,0, 0.4);
+ z-index: -1;
+}
+
+section#services .business{
+ position: relative;
+ background-image: url();
+ width: 350px;
+ height: 596px;
+ z-index: 1;
+}
+
+section#services .business::after{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 350px;
+ height: 596px;
+ background-color: rgb(0,0,0, 0.4);
+ z-index: 1;
+}
